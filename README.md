@@ -1,6 +1,6 @@
-# PDF to Markdown with Text and Image OCR using Gemini Pro Vision
+# PDF to Markdown with Text and Image OCR using Gemini API.
 
-This Python project extracts text from PDF files, including performing OCR on embedded images using Google's Gemini Pro Vision API. It aims to preserve the document structure and outputs the combined text and OCR results into a Markdown file.
+This Python project extracts text from PDF files, including performing OCR on embedded images using Google's Gemini API. It aims to preserve the document structure and outputs the combined text and OCR results into a Markdown file.
 
 ## Description
 
