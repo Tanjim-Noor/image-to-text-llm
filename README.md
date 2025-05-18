@@ -64,6 +64,12 @@ This tool is particularly useful for digitizing PDFs where text might be embedde
     * `output_file`: Desired path for the output Markdown file (e.g., `"output/ocr_results.md"`).
     * `start_page`: The page number to start processing from (1-based index).
     * `end_page`: The page number to end processing at (inclusive). Set to `0` or leave empty to process until the last page.
+    * **AI Model**: The script currently uses `gemini-2.0-flash`. You can change to other compatible Gemini models (e.g., `gemini-1.5-flash`, `gemini-1.5-pro`, `gemini-1.0-pro`, etc.) by modifying the `model` parameter in the `get_ocr_text_from_image` function. For example:
+    ```python
+    # Inside get_ocr_text_from_image function:
+    llm = ChatGoogleGenerativeAI(model="YOUR_DESIRED_GEMINI_MODEL", google_api_key=api_key)
+    ```
+    Ensure the chosen model is available and supports vision capabilities if you intend to use it for image OCR.
 
 2.  **Run the script:**
     ```bash
